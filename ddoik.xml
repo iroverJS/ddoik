@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="102" inline="false" x="174" y="102">
+  <block type="controls_whileUntil" id="102" inline="false" x="119" y="56">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="logic_compare" id="188" inline="true">
