@@ -29,6 +29,7 @@
                 </value>
                 <next>
                   <block type="controls_if" id="15" inline="false">
+                    <mutation else="1"></mutation>
                     <value name="IF0">
                       <block type="logic_compare" id="2" inline="true">
                         <field name="OP">GT</field>
@@ -68,6 +69,16 @@
                             </next>
                           </block>
                         </next>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="led_select" id="272" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="sensor_spectrometer" id="304">
+                            <field name="LIGHT">RED</field>
+                          </block>
+                        </value>
                       </block>
                     </statement>
                     <next>
