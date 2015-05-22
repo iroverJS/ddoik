@@ -79,6 +79,15 @@
                             <field name="LIGHT">RED</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="robot_delay" id="350" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="351">
+                                <field name="NUM">10000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
                       </block>
                     </statement>
                     <next>
