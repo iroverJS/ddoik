@@ -46,24 +46,28 @@
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="led_select" id="50" inline="true">
-                        <field name="ACTION">FLASH</field>
-                        <value name="LED">
-                          <block type="math_number" id="175">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
+                      <block type="movement_right" id="376">
                         <next>
-                          <block type="movement_forward" id="5">
+                          <block type="led_select" id="50" inline="true">
+                            <field name="ACTION">FLASH</field>
+                            <value name="LED">
+                              <block type="math_number" id="175">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="robot_delay" id="137" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="138">
-                                    <field name="NUM">50</field>
-                                  </block>
-                                </value>
+                              <block type="movement_forward" id="5">
                                 <next>
-                                  <block type="movement_stop" id="139"></block>
+                                  <block type="robot_delay" id="137" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="138">
+                                        <field name="NUM">50</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="139"></block>
+                                    </next>
+                                  </block>
                                 </next>
                               </block>
                             </next>
