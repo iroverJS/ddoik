@@ -46,33 +46,65 @@
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="movement_right" id="376">
-                        <next>
-                          <block type="led_select" id="50" inline="true">
-                            <field name="ACTION">FLASH</field>
-                            <value name="LED">
-                              <block type="math_number" id="175">
-                                <field name="NUM">2</field>
+                      <block type="controls_if" id="544" inline="false">
+                        <mutation else="1"></mutation>
+                        <value name="IF0">
+                          <block type="logic_compare" id="545" inline="true">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="sensor_object" id="473">
+                                <field name="OBJECT">LEFTFRONT</field>
                               </block>
                             </value>
+                            <value name="B">
+                              <block type="math_number" id="547">
+                                <field name="NUM">75</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="movement_right" id="376">
                             <next>
-                              <block type="movement_forward" id="5">
+                              <block type="led_select" id="50" inline="true">
+                                <field name="ACTION">FLASH</field>
+                                <value name="LED">
+                                  <block type="math_number" id="175">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="robot_delay" id="137" inline="true">
+                                  <block type="robot_delay" id="548" inline="true">
                                     <value name="DELAY">
-                                      <block type="math_number" id="138">
+                                      <block type="math_number" id="549">
                                         <field name="NUM">50</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_stop" id="139"></block>
+                                      <block type="movement_stop" id="550"></block>
                                     </next>
                                   </block>
                                 </next>
                               </block>
                             </next>
                           </block>
-                        </next>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="movement_forward" id="5">
+                            <next>
+                              <block type="robot_delay" id="137" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="138">
+                                    <field name="NUM">50</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="139"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
                       </block>
                     </statement>
                     <statement name="ELSE">
