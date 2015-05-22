@@ -108,22 +108,13 @@
                       </block>
                     </statement>
                     <statement name="ELSE">
-                      <block type="led_select" id="272" inline="true">
+                      <block type="led_select" id="563" inline="true">
                         <field name="ACTION">FLASH</field>
                         <value name="LED">
-                          <block type="sensor_spectrometer" id="304">
-                            <field name="LIGHT">RED</field>
+                          <block type="math_number" id="570">
+                            <field name="NUM">0</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="robot_delay" id="350" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="351">
-                                <field name="NUM">1000</field>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
                       </block>
                     </statement>
                     <next>
